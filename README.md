@@ -45,7 +45,7 @@ This project analyzes data from Portuguese banking institution marketing campaig
 ```
 comparing_classifiers/
 ├── README.md
-├── prompt_III.ipynb           # Main analysis notebook
+├── comparing_classifiers.ipynb           # Main analysis notebook
 ├── CRISP-DM-BANK.pdf         # Research paper reference
 ├── data/
 │   ├── bank-additional-full.csv
