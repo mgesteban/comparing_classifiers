@@ -1,7 +1,7 @@
-# 🧠 Comparing Classifiers for Bank Marketing Campaigns  
+#Comparing Classifiers for Bank Marketing Campaigns  
 **An Application of the CRISP-DM Methodology**
 
-## 📘 Project Overview
+##Project Overview
 This project applies **data mining and machine learning techniques** to the **Bank Marketing dataset** from a Portuguese bank, following the **CRISP-DM (Cross-Industry Standard Process for Data Mining)** methodology.  
 
 The goal is to **predict whether a client will subscribe to a long-term bank deposit** (“yes” or “no”) based on demographic, financial, and campaign-related data.  
@@ -10,7 +10,7 @@ The notebook explores and compares multiple classification models — including 
 
 ---
 
-## 🧩 Dataset Information
+##Dataset Information
 **Source:** [Moro, Cortez, and Rita (2014)](http://dx.doi.org/10.1016/j.dss.2014.03.001)  
 **Paper:** *A Data-Driven Approach to Predict the Success of Bank Telemarketing*, *Decision Support Systems*.  
 
@@ -28,11 +28,7 @@ This dataset was collected from a Portuguese bank’s direct marketing campaigns
 | **Campaign Performance** | `campaign`, `pdays`, `previous`, `poutcome` | Interaction history and campaign success |
 | **Economic Indicators** | `emp.var.rate`, `cons.price.idx`, `cons.conf.idx`, `euribor3m`, `nr.employed` | External economic context |
 
-⚠️ **Important:** The `duration` variable (call length in seconds) strongly correlates with success but should **not be used in real predictive settings** since it’s only known after a call ends.
-
----
-
-## 🧠 Methodology: CRISP-DM
+##Methodology: CRISP-DM
 This project follows the **CRISP-DM** framework, which consists of six iterative phases:
 
 1. **Business Understanding** – Define objectives: improve efficiency of telemarketing campaigns.  
@@ -44,7 +40,7 @@ This project follows the **CRISP-DM** framework, which consists of six iterative
 
 ---
 
-## ⚙️ Experiments and Models
+##Experiments and Models
 | Model | Train Accuracy | Test Accuracy | Key Observations |
 |--------|----------------|----------------|------------------|
 | **Logistic Regression** | 0.8873 | 0.8874 | Fast, interpretable, good baseline |
@@ -52,11 +48,11 @@ This project follows the **CRISP-DM** framework, which consists of six iterative
 | **KNN** | 0.8915 | 0.8777 | Sensitive to scaling and feature sparsity |
 | **Decision Tree** | 0.9188 | 0.8642 | Tends to overfit; requires pruning |
 
-The **Support Vector Machine (SVM)** model provided the **best predictive performance** and was favored in prior research.
+The **Support Vector Machine (SVM)** model provided the **best predictive performance** and was favored in prior research. I decided to focus on hyperparameter tuning for Logistic Regression instead of SVM because Logistic Regression is a simpler, faster, and more interpretable model—making it easier to understand how changes in parameters directly affect performance. While SVM can achieve strong accuracy, it is computationally intensive and sensitive to parameter choices like kernel type, gamma, and C, which require far more time and processing power to tune properly. In contrast, Logistic Regression’s key hyperparameter, the regularization strength (C), can be optimized efficiently and provides clear insights into the model’s trade-off between bias and variance. This made it a more practical and educational choice for improving performance while maintaining interpretability and computational efficiency.
 
 ---
 
-## 📊 Performance Summary
+##Performance Summary
 Example output metrics from the notebook:
 
 ```
@@ -81,7 +77,7 @@ These results illustrate **severe class imbalance** — the “yes” responses 
 
 ---
 
-## 🧮 Tools and Libraries
+##Tools and Libraries
 - Python 3.x  
 - Jupyter Notebook  
 - scikit-learn  
@@ -90,7 +86,7 @@ These results illustrate **severe class imbalance** — the “yes” responses 
 
 ---
 
-## 🗂️ Repository Structure
+##Repository Structure
 ```
 comparing_classifiers/
 │
@@ -111,7 +107,7 @@ comparing_classifiers/
 
 ---
 
-## 🧰 How to Run
+##How to Run
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/comparing_classifiers.git
@@ -128,7 +124,7 @@ comparing_classifiers/
 
 ---
 
-## 📚 Citation
+##Citation
 If you use this dataset or reference this project, please cite:
 
 > **S. Moro, P. Cortez, and P. Rita (2014).**  
@@ -138,8 +134,8 @@ If you use this dataset or reference this project, please cite:
 
 ---
 
-## ✍️ Author
+##Author
 **Grace Esteban**  
-Data Science Student | Executive Assistant | Developer of AI Applications  
+Developer of AI Applications for EAs 
 📍 San Francisco, California  
 🔗 [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/)
