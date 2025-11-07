@@ -97,7 +97,10 @@ param_grid = [
 
 
 
-Through this tuning process, the model found the most effective combination of regularization strength and penalty type, improving its ability to handle class imbalance and capture meaningful relationships in the data. As a result, the Logistic Regression model’s accuracy increased significantly after tuning.
+Through this tuning process, the model found the most effective combination of regularization strength and
+penalty type, improving its ability to handle class imbalance
+and capture meaningful relationships in the data.
+As a result, the Logistic Regression model’s accuracy increased significantly after tuning.
 
 ---
 
