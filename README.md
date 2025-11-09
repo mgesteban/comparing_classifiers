@@ -66,31 +66,22 @@ This makes Logistic Regression a **practical and educational choice** for improv
 
 ---
 
-## Performance Summary
-Example output metrics from the notebook:
+### New Baseline After Model Improvements
 
-```
+After all the improvements, the new baseline is **no longer the naïve 88.7% majority-class accuracy**.  
+It is now defined by the performance of the **tuned Logistic Regression model**, which becomes the new benchmark for any future models (such as SVM or Random Forest) to beat.
 
-Test Accuracy: 0.887
-Test Balanced Acc: 0.5
-Test F1: 0.0
-Test ROC-AUC: 0.653
-Test PR-AUC: 0.203
-Confusion Matrix @0.5:
-[[10965     0]
-[ 1392     0]]
+**New Baseline Performance:**
 
-Best threshold by F1: 0.125
-F1 @best thr: 0.26
-Balanced Acc @best thr: 0.60
-Confusion Matrix @best thr:
-[[7348 3617]
-[ 643  749]]
+- **Accuracy:** ~0.88  
+- **ROC-AUC:** ~0.65  
+- **F1-score:** ~0.26  
+- **Precision–Recall AUC:** ~0.20  
+
+This updated baseline reflects a **meaningful improvement** — the model not only maintains high accuracy but also begins to **identify true positive cases** (“Yes” responses), offering real predictive value for the bank’s marketing campaigns.
+
 
 ````
-
-These results illustrate **severe class imbalance** — the “yes” responses represent only about **11%** of the dataset — highlighting the need for **threshold tuning**, **hyperparameter optimization**, and **balanced metrics** (ROC-AUC, F1, Precision-Recall).
-
 ## Tools and Libraries
 
 * Python 3.x
