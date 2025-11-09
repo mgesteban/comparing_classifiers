@@ -4,11 +4,15 @@
 ---
 
 ## Project Overview
-This project applies **data mining and machine learning techniques** to the **Bank Marketing dataset** from a Portuguese bank, following the **CRISP-DM (Cross-Industry Standard Process for Data Mining)** methodology.  
+This project applies data mining and machine learning techniques to the Bank Marketing dataset from a Portuguese bank, following the **CRISP-DM (Cross-Industry Standard Process for Data Mining)** methodology.  
 
-The goal is to **predict whether a client will subscribe to a long-term bank deposit** (“yes” or “no”) based on demographic, financial, and campaign-related data.  
+The goal is to predict whether a client will subscribe to a long-term bank deposit (“yes” or “no”) based on demographic, financial, and campaign-related data.  
 
-The notebook explores and compares multiple classification models — including **Logistic Regression**, **K-Nearest Neighbors (KNN)**, **Decision Tree**, and **Support Vector Machine (SVM)** — to identify the most effective model for improving marketing efficiency.
+This project applies data mining and machine learning techniques to the Bank Marketing dataset from a Portuguese bank, following the CRISP-DM (Cross-Industry Standard Process for Data Mining) methodology.
+
+The goal is to predict whether a client will subscribe to a long-term bank deposit (“yes” or “no”) based on demographic, financial, and campaign-related data.
+
+In this notebook, I performed an initial comparison of several classification models — Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, and Support Vector Machine (SVM) — to establish baseline results. After this, I focused primarily on Logistic Regression, performing hyperparameter tuning and feature engineering to improve its predictive performance and interpretability.
 
 ---
 
