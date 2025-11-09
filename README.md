@@ -1,4 +1,3 @@
-```markdown
 # Comparing Classifiers for Bank Marketing Campaigns  
 **An Application of the CRISP-DM Methodology**
 
@@ -188,9 +187,3 @@ Developer of AI Applications for Executive Assistants
 📍 San Francisco, California
 🔗 [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/)
 
-```
-
----
-
-Would you like me to make it include **collapsible sections** (like dropdowns for "Dataset Info" or "Experiments") so your notebook looks more interactive and cleaner in Jupyter?
-```
