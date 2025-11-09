@@ -91,35 +91,6 @@ Confusion Matrix @best thr:
 
 These results illustrate **severe class imbalance** — the “yes” responses represent only about **11%** of the dataset — highlighting the need for **threshold tuning**, **hyperparameter optimization**, and **balanced metrics** (ROC-AUC, F1, Precision-Recall).
 
----
-
-## Logistic Regression Hyperparameter Tuning
-Before improving the model (Cell 11 in my notebook), the Logistic Regression accuracy was only **59%**.  
-This was because the model used **default parameters**, which are rarely optimal — especially for **imbalanced datasets** like this one.  
-The default regularization strength (`C=1.0`) and penalty (`l2`) likely caused the model to **underfit**, leading to poor performance.  
-
-After applying **GridSearchCV**, the model systematically tested different combinations of hyperparameters:
-
-```python
-param_grid = [
-    {"penalty": ["l2"],
-     "C": [0.01, 0.1, 1, 10],
-     "class_weight": [None, "balanced"]},
-    {"penalty": ["l1"],
-     "C": [0.01, 0.1, 1, 10],
-     "class_weight": [None, "balanced"]},
-    {"penalty": ["elasticnet"],
-     "C": [0.01, 0.1, 1, 10],
-     "l1_ratio": [0.5, 0.8],
-     "class_weight": [None, "balanced"]},
-]
-````
-
-Through this tuning process, the model found a more effective combination of **regularization strength** and **penalty type**, improving its ability to handle class imbalance and capture meaningful relationships in the data.
-As a result, the Logistic Regression model’s performance **significantly improved after tuning**.
-
----
-
 ## Tools and Libraries
 
 * Python 3.x
