@@ -82,13 +82,13 @@ This updated baseline reflects a **meaningful improvement** — the model not on
 
 
 ````
-## Tools and Libraries
+Tools and Libraries
 
-* Python 3.x
-* Jupyter Notebook
-* scikit-learn
-* pandas, NumPy, matplotlib, seaborn
-* openpyxl (for exporting results)
+Python 3.x
+Jupyter Notebook
+scikit-learn
+pandas, NumPy, matplotlib, seaborn
+openpyxl (for exporting results)
 
 ---
 
