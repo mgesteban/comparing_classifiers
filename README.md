@@ -139,10 +139,10 @@ comparing_classifiers/
 
 If you use this dataset or reference this project, please cite:
 
-> **S. Moro, P. Cortez, and P. Rita (2014).**
-> *A Data-Driven Approach to Predict the Success of Bank Telemarketing.*
-> *Decision Support Systems, 62*, 22–31.
-> DOI: [10.1016/j.dss.2014.03.001](http://dx.doi.org/10.1016/j.dss.2014.03.001)
+**S. Moro, P. Cortez, and P. Rita (2014).**
+*A Data-Driven Approach to Predict the Success of Bank Telemarketing.*
+*Decision Support Systems, 62*, 22–31.
+DOI: [10.1016/j.dss.2014.03.001](http://dx.doi.org/10.1016/j.dss.2014.03.001)
 
 ---
 
